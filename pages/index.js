@@ -38,7 +38,7 @@ const TaskComponent = ({ fetchedData }) => {
       {fetchedData.map(data => (
         <div className="individualCard">
         <div key={data.id}>
-          <Cards monthName={data.eventinMonth}  date={data.eventinDate}/>
+          <Cards id={data.id} monthName={data.eventinMonth}  date={data.eventinDate}/>
         </div>
         </div>
       ))}

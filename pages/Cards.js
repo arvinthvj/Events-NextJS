@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 // import styles from '../styles'
 function Cards(props) {
     return (
@@ -10,9 +11,20 @@ function Cards(props) {
                 
             </div>
             <div className="cardbutton">
-                <button>
+            <Link
+  href={{
+    pathname: `/CarrryForward`,
+    query: {
+      title: props.id, // should be `title` not `id`
+    },
+  }}
+  
+>
+<button>
                     View Details
                 </button>
+</Link>;
+                
             </div>
             </div>
             
